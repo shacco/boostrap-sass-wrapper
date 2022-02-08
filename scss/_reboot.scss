@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/reboot";
+
+p {
+  a {
+    font-weight: $font-weight-medium;
+  }
+
+  &.af-post a {
+    color: $af-orange;
+    font-weight: $font-weight-normal;
+  }
+}
+
+/*Colors*/
+.bg-blue, .bg-blue-dark, .bg-blue-gray, .bg-blue-light, .bg-yellow, .bg-orange, .bg-gray-dark, .bg-green, .bg-red, .bg-black {
+  color: $af-white;
+}
+
+.bg-gray, .bg-gray-light, .bg-white {
+  color: $af-black;
+}
+
+
+.btn-yellow {
+  color: $af-white !important;
+}

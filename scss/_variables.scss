@@ -1,0 +1,70 @@
+$font-weight-medium: 500 !default;
+
+$font-family-roboto: 'Roboto', sans-serif !default;
+$font-family-base: $font-family-roboto;
+
+$font-size-medium: 1.125rem !default;
+$font-size-small: 1.125rem !default;
+
+
+$h1-font-size: 2.25rem !default;
+$h2-font-size: 1.75rem !default;
+$h3-font-size: 1.5rem !default;
+$h4-font-size: 1.25rem !default;
+
+$line-height-base: 1.25;
+$line-height-medium: 1.125;
+$line-height-small: 1;
+$line-height-h1: 2.5;
+$line-height-h2: 2;
+$line-height-h3: 1.75;
+$line-height-h4: 1.5;
+
+
+$af-blue: #155892;
+$af-blue-dark: #0B3254;
+$af-blue-gray: #3D5176;
+$af-blue-light: #0CB7EF;
+$af-yellow: #FFA401;
+$af-orange: #F5640A;
+$af-black: #000000;
+$af-white: #ffffff;
+$af-gray-dark: #6B6B6B;
+$af-gray: #C5C5C5;
+$af-gray-light: #F6F6F6;
+$af-red: #E61F37;
+$af-green: #00875A;
+$theme-colors: () !default;
+
+
+$dark-colors: map-merge(
+                (
+                        "blue": $af-blue,
+                        "blue-dark": $af-blue-dark,
+                        "blue-gray": $af-blue-gray,
+                        "blue-light": $af-blue-light,
+                        "yellow": $af-yellow,
+                        "orange": $af-orange,
+                        "black": $af-black,
+                        "gray-dark": $af-gray-dark,
+                        "green": $af-green,
+                        "red": $af-red
+                ),
+                $theme-colors
+);
+$light-colors: map-merge(
+                (
+                        "white": $af-white,
+                        "gray": $af-gray,
+                        "gray-light": $af-gray-light
+                ),
+                $theme-colors
+);
+$theme-colors: map-merge($light-colors, $dark-colors);
+
+$body-color: $af-blue-gray;
+
+$link-color: $af-blue-light;
+$link-hover-color: $af-blue-light;
+
+@import "~bootstrap/scss/variables";

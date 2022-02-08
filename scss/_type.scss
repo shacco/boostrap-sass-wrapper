@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/type";
+/*Headings*/
+h1, h2, h3, h4 {
+  font-weight: $font-weight-bold;
+  color: $af-blue;
+}
+
+h1 {
+  line-height: $line-height-h1;
+}
+
+h2 {
+  line-height: $line-height-h2;
+}
+
+h3 {
+  line-height: $line-height-h3;
+}
+
+h4 {
+  line-height: $line-height-h4;
+}
